@@ -1,0 +1,70 @@
+*,
+*:after,
+*:before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.quadro{
+	min-width: 575px;
+	width: 60%;
+	height: 70vh;
+	background-color: #90e0e9;
+	border: solid 9px #333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.cabeça{
+	width: 28%;
+	min-width: 170px;
+	height: 50vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #cccc22;
+	border-radius: 110px;
+	border: solid 3px #000;
+}
+.orelha{
+	width: 3%;
+	height: 7vh;
+	margin-top: 3%;
+	background-color: #cccc22;
+	border: solid 3px #000;
+}
+.orelha-esquerda{
+	border-top-left-radius: 26px;
+	border-bottom-left-radius: 26px; 
+	border-right: transparent;
+}
+.orelha-direita{
+	border-top-right-radius: 26px;
+	border-bottom-right-radius: 26px; 
+	border-left: transparent;
+}
+.testa{
+	width: 120%;
+	height: 4vh;
+	background-color: #cccc22;
+	margin-top: 46%;
+	margin-left: -4%;
+	border-radius: 20px;
+	border-left: solid 3px #000;
+	border-right: solid 3px #000;
+}
+.olho{
+	width: 40%;
+	height: 13vh;
+	background-color: #fff;
+	border-radius: 100px;
+	border: solid 3px #000;
+}
