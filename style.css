@@ -27,6 +27,7 @@ body{
 	width: 28%;
 	min-width: 170px;
 	height: 50vh;
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -37,7 +38,7 @@ body{
 .orelha{
 	width: 3%;
 	height: 7vh;
-	margin-top: 3%;
+	margin-top: 7%;
 	background-color: #cccc22;
 	border: solid 3px #000;
 }
@@ -52,19 +53,66 @@ body{
 	border-left: transparent;
 }
 .testa{
-	width: 120%;
-	height: 4vh;
+	width: 50%;
+	height: 3vh;
 	background-color: #cccc22;
 	margin-top: 46%;
-	margin-left: -4%;
 	border-radius: 20px;
-	border-left: solid 3px #000;
+	position: absolute;
+	top: 4%;
+}
+.testa-esquerda{
 	border-right: solid 3px #000;
+	left: 55%;
+}
+.testa-direita{
+	border-left: solid 3px #000;
+	right: 55%;
 }
 .olho{
-	width: 40%;
-	height: 13vh;
+	width: 49%;
+	height: 15vh;
 	background-color: #fff;
-	border-radius: 100px;
+	border-radius: 100%;
+	border: solid 2px #000;
+	position: absolute;
+	top: 30%;
+	z-index: 1;
+}
+.olho-esquerdo{
+	left: -3%;
+}
+.olho-direito{
+	right: -3%;
+}
+.pupila{
+	width: 17%;
+	height: 16px;
+	left: 50%;
+	background-color: #000;
+	border-radius: 100%;
+	position: absolute;
+	top: 48%;
+}
+.bulso{
+	width: 110%;
+	height: 17vh;
+	background-color: #ee9a49;
 	border: solid 3px #000;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 0;
+	left: -4%;
+}
+.nariz{
+	width: 36%;
+	height: 12vh;
+	background-color: #cccc22;
+	border: solid 2px #000;
+	border-top: transparent;
+	border-bottom-left-radius: 44%;
+	border-bottom-right-radius: 44%;
+	position: absolute;
+	top: 47%;
+	left: 32%;
 }
