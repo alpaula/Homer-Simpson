@@ -11,83 +11,94 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.quadro{
-	min-width: 575px;
-	width: 60%;
+.container{
+	width: 50vw;
+	max-width: 1440px; 
 	height: 70vh;
-	background-color: #90e0e9;
 	border: solid 9px #333;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: row;
-	flex-wrap: wrap;
+	position: relative;
+}
+.cabelo{
+	width: 4vw;
+	height: 3vh;
+	border-radius: 100%;
+	border: solid 1px #000;
+	border-bottom-color: #fed61e;
+	position: absolute;
+	top: -1.9vh;
+	left: 4.3vw;
+}
+.cabelo2{
+	width: 3vw;
+	height: 2vh;
+	border-radius: 100%;
+	border: solid 1px #000;
+	border-bottom-color: #fed61e;
+	position: absolute;
+	top: 0.5vh;
+	left: 0.5vw;
 }
 .cabeça{
-	width: 28%;
-	min-width: 170px;
-	height: 50vh;
-	position: relative;
+	width: 13vw;
+	height: 55vh;
+	position: absolute;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	background-color: #cccc22;
+	background-color: #fed61e;
 	border-radius: 110px;
 	border: solid 3px #000;
+	z-index: 5;
+	float: left;
+	box-shadow: inset 5px 5px 0 2px rgba(255,250,196,0.3);
+}
+.cabeça:last-child {
+	background: #ebce44;
+	float: right;
+	box-shadow: inset -5px -5px 0 2px rgba(0,0,0,0.05);
 }
 .orelha{
-	width: 3%;
+	width: 4vw;
 	height: 7vh;
-	margin-top: 7%;
-	background-color: #cccc22;
+	border-radius: 100%;
+	background-color: #fed61e;
 	border: solid 3px #000;
+	position: absolute;
+	top: 33vh;
+	z-index: 4;
+	float: left;
+	box-shadow: inset 5px 5px 0 2px rgba(255,250,196,0.3);
 }
-.orelha-esquerda{
-	border-top-left-radius: 26px;
-	border-bottom-left-radius: 26px; 
+.orelha-esquerda{ 
 	border-right: transparent;
+	left: 17vw;
 }
 .orelha-direita{
-	border-top-right-radius: 26px;
-	border-bottom-right-radius: 26px; 
 	border-left: transparent;
-}
-.testa{
-	width: 50%;
-	height: 3vh;
-	background-color: #cccc22;
-	margin-top: 46%;
-	border-radius: 20px;
-	position: absolute;
-	top: 4%;
-}
-.testa-esquerda{
-	border-right: solid 3px #000;
-	left: 55%;
-}
-.testa-direita{
-	border-left: solid 3px #000;
-	right: 55%;
+	right: 17vw;
 }
 .olho{
-	width: 49%;
+	width: 7vw;
 	height: 15vh;
 	background-color: #fff;
 	border-radius: 100%;
 	border: solid 2px #000;
 	position: absolute;
-	top: 30%;
-	z-index: 1;
+	top: 17vh;
+	z-index: 8;
 }
 .olho-esquerdo{
-	left: -3%;
+	left: -1vw;
 }
 .olho-direito{
-	right: -3%;
+	right: -1vw;
 }
 .pupila{
-	width: 17%;
-	height: 16px;
+	width: 1vw;
+	height: 2vh;
 	left: 50%;
 	background-color: #000;
 	border-radius: 100%;
@@ -95,24 +106,71 @@ body{
 	top: 48%;
 }
 .bulso{
-	width: 110%;
-	height: 17vh;
-	background-color: #ee9a49;
+	width: 14vw;
+	height: 20vh;
+	background-color: #d3a64b;
 	border: solid 3px #000;
 	border-radius: 50%;
 	position: absolute;
-	bottom: 0;
-	left: -4%;
+	bottom: 1vh;
+	left: -0.6vw;
+	z-index: 6;
+	float: left;
+	box-shadow: inset 5px 5px 0 2px rgba(255,250,196,0.3);
+}
+.boca:before, .boca:after{
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: 3;
+	top: 5vh;
+	left: -3px;
+	height: 20px;
+	width: 20px;
+	border-left: 3px solid #000;
+	border-radius: 40%;
+	-webkit-transform: rotate(45deg);
+}
+.boca:after {
+	left: auto;
+	right: -3px;
+	border-left: none;
+	border-right: 3px solid #000;
+	-webkit-transform: rotate(-45deg);
+}
+.boca{
+	width: 10vw;
+	height: 11vh;
+	border: solid 5px #000;
+	border-radius: 100%;
+	border-top: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	position: absolute;
+	top: 3.3vh;
+	left: 1.7vw;
+}
+.papinho{
+	width: 3vw;
+	height: 2vh;
+	background-color: #d3a64b;
+	border-bottom: solid 2px #000;
+	border-radius: 100%;
+	position: absolute;
+	top: 15vh;
+	left: 5vw;
 }
 .nariz{
-	width: 36%;
-	height: 12vh;
-	background-color: #cccc22;
+	width: 4vw;
+	height: 7vh;
+	background-color: #fed61e;
 	border: solid 2px #000;
 	border-top: transparent;
-	border-bottom-left-radius: 44%;
-	border-bottom-right-radius: 44%;
+	border-radius: 100%;
 	position: absolute;
-	top: 47%;
-	left: 32%;
+	top: 28vh;
+	left: 34%;
+	z-index: 9;
+	float: left;
+	box-shadow: inset 5px 5px 0 2px rgba(255,250,196,0.3);
 }
