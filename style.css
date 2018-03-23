@@ -12,7 +12,7 @@ body{
 	align-items: center;
 }
 .container{
-	width: 50vw;
+	width: 30vw;
 	max-width: 1440px; 
 	height: 70vh;
 	border: solid 9px #333;
@@ -55,11 +55,6 @@ body{
 	float: left;
 	box-shadow: inset 5px 5px 0 2px rgba(255,250,196,0.3);
 }
-.cabeça:last-child {
-	background: #ebce44;
-	float: right;
-	box-shadow: inset -5px -5px 0 2px rgba(0,0,0,0.05);
-}
 .orelha{
 	width: 4vw;
 	height: 7vh;
@@ -74,11 +69,11 @@ body{
 }
 .orelha-esquerda{ 
 	border-right: transparent;
-	left: 17vw;
+	left: 18vw;
 }
 .orelha-direita{
 	border-left: transparent;
-	right: 17vw;
+	right: 18vw;
 }
 .olho{
 	width: 7vw;
